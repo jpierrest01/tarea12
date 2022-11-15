@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://getbootstrap.com//docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30"
+                    height="24" class="d-inline-block align-text-top">
+                Bootstrap
+            </a>
+        </div>
+    </nav>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Formulario Clase 12</h3>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mail" class="form-label">E-mail</label>
+                            <input type="text" class="form-control" id="mail" placeholder="E-mail">
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Telefono</label>
+                            <input type="text" class="form-control" id="telefono" placeholder="Telefono">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pelicula" class="form-label">Película favorita  </label>
+                            <input type="text" class="form-control" id="pelicula" placeholder="Pelicula">
+                        </div>
+                        <div class="mb-3">
+                            <label for="actor" class="form-label">Actor o actriz favorito</label>
+                            <input type="text" class="form-control" id="actor" placeholder="Actor">
+                        </div>
+                        <div class="mb-3">
+                            <label for="serie" class="form-label">Serie favorita</label>
+                            <input type="text" class="form-control" id="serie" placeholder="serie">
+                        </div>                        
+                        <div class="mb-3">
+                            <button type="button" class="col-md-12 btn btn-success" onclick="enviardatos()">Enviar datos</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <br>
+        <hr>
+        <div class="row">
+            <button type="button" class="col-md-2 btn btn-primary" onclick="limpiardatos()" >Limpiar</button>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellidos</th>
+                        <th scope="col">Documento(DNI)</th>
+                        <th scope="col">Correo</th>
+                    </tr>
+                </thead>
+                <tbody id="table">
+                   
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="file.js"></script>
+</body>
+
+</html>
